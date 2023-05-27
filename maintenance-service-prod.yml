@@ -2,13 +2,10 @@ spring:
   application:
     name: maintenance-service
   datasource:
-    username: postgres
-    password: '12345'
-    url: jdbc:postgresql://localhost:5432/maintenancedb-t2
+    username: root
+    password: 12345
+    url: jdbc:mysql://localhost:5432/maintenancedb-t2?createDatabaseIfNotExist=true
   jpa:
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
   kafka:
