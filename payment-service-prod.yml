@@ -3,7 +3,6 @@ spring:
     name: payment-service
   datasource:
     username: root
-    password: 12345
     url: jdbc:mysql://localhost:5432/paymentdb-t2?createDatabaseIfNotExist=true
   jpa:
     properties:
