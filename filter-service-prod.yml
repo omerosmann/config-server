@@ -3,7 +3,7 @@ spring:
     name: filter-service
   data:
     mongodb:
-      database: filterdb-t2
+      database: filterdb-dev
       uri: mongodb://localhost:27017
   kafka:
     consumer:
