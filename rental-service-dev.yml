@@ -40,9 +40,9 @@ server:
   port: 0
 
 #Fault Tolerance Limiter Different Solution
-#resilience4j:
-#  retry:
-#    instances:
-#      checkIfCarAvailable:
-#        maxAttempts: 5
-#        waitDuration: 15s
+resilience4j:
+ retry:
+   instances:
+     checkIfCarAvailable:
+       maxAttempts: 5
+       waitDuration: 15s
